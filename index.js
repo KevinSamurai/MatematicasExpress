@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const PORT = 3000
+const PORT = 1001
 
 const num1 = 58
 const num2 = 12
@@ -29,9 +29,7 @@ app.get('/resta', (req, res) => {
 app.get('/multiplicacion', (req, res) => {
   const multi = num1 * num2
 
-  res.send({
-    "multiplicación": multi,
-    })
+  res.send("Resultado " + multi)
 })
 
 app.get('/division', (req, res) => {
